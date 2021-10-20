@@ -60,7 +60,11 @@ function Header() {
 					<PlusCircleIcon className="navBtn" />
 					<UserGroupIcon className="navBtn" />
 					<HeartIcon className="navBtn" />
-					<img src="" alt="profile pic" />
+					<img
+						src="https://www.nicepng.com/png/detail/780-7805650_generic-user-image-male-man-cartoon-no-eyes.png"
+						alt="profile pic"
+                        className="h-10 cursor-pointer rounded-full"
+					/>
 				</div>
 			</div>
 		</div>
