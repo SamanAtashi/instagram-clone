@@ -1,5 +1,12 @@
 import Image from 'next/image';
-import { SearchIcon } from '@heroicons/react/outline';
+import {
+	SearchIcon,
+	PlusCircleIcon,
+	UserGroupIcon,
+	HeartIcon,
+	PaperAirplaneIcon,
+	MenuIcon,
+} from '@heroicons/react/outline';
 
 function Header() {
 	return (
@@ -40,7 +47,6 @@ function Header() {
 				{
 					//* right--------------
 				}
-                
 			</div>
 		</div>
 	);
