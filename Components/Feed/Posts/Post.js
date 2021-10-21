@@ -26,10 +26,22 @@ function Post({ key, username, userImg, img, caption }) {
 			{
 				// ! main img -----------------------------
 			}
-            <img src={img} alt="post image" className="object-cover w-full"/>
+			<img
+				src={img}
+				alt="post image"
+				className="object-cover w-full"
+			/>
 			{
 				// ! Btns ---------------------------------
 			}
+			<div className="flex justify-between px-4 pt-4">
+				<div className="flex space-x-4">
+					<HeartIcon className="btn" />
+					<ChatIcon className="btn" />
+					<PaperAirplaneIcon className="btn" />
+				</div>
+				<BookmarkIcon className="btn" />
+			</div>
 			{
 				// ! Captions -----------------------------
 			}
