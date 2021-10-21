@@ -49,13 +49,21 @@ function Post({ key, username, userImg, img, caption }) {
 				<span className="font-bold mr-1">{username}</span>
 				{caption}
 			</p>
-
 			{
 				// ! Comments -----------------------------
 			}
 			{
 				// ! input post ---------------------------
 			}
+			<form className="flex items-center p-4">
+				<EmojiHappyIcon className="h-7" />
+				<input
+					className="border-none flex-1 focus:ring-0 outline"
+					type="text"
+					placeholder="Leave a comment..."
+				/>
+				<button className="font-semibold text-blue-400">Post</button>
+			</form>
 		</div>
 	);
 }
