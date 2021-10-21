@@ -4,7 +4,7 @@ import Header from '../Components/Header';
 
 export default function Home() {
 	return (
-		<div className="">
+		<div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-hide">
 			<Head>
 				<title>Instagram</title>
 				<link rel="icon" href="/favicon.ico" />
@@ -12,7 +12,7 @@ export default function Home() {
 
 			<Header />
 
-            <Feed />
+			<Feed />
 		</div>
 	);
 }
