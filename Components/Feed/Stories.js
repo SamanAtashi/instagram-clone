@@ -1,10 +1,28 @@
-
+import faker from 'faker';
+import { useEffect, useState } from 'react';
 function Stories() {
-    return (
-        <div>
-            
-        </div>
-    )
+	const [suggestions, setSuggestions] = useState([]);
+
+	useEffect(() => {
+		const suggestions = [...Array(25)].map((_, idx) => ({
+			...faker.helpers.contextualCard(),
+			id: idx,
+		}));
+
+		setSuggestions(suggestions);
+	}, []);
+
+	return (
+		<div>
+			{suggestions.map((profile) => {
+				<Story
+					key={profile.id}
+					username={profile.username}
+					img={profile.avatar}
+				/>;
+			})}
+		</div>
+	);
 }
 
-export default Stories
+export default Stories;
