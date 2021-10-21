@@ -45,6 +45,11 @@ function Post({ key, username, userImg, img, caption }) {
 			{
 				// ! Captions -----------------------------
 			}
+			<p className="p-5 truncate">
+				<span className="font-bold mr-1">{username}</span>
+				{caption}
+			</p>
+
 			{
 				// ! Comments -----------------------------
 			}
